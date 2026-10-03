@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>GCB Bank CCTS – Customer Complaint Tracking System</title>
+    <meta
+      name="title"
+      content="GCB Bank CCTS – Customer Complaint Tracking System"
+    />
+    <meta
+      name="description"
+      content="Enterprise customer complaint tracking system for banking workflows, supporting customer submissions, staff investigation workstations, manager assignments, and SLA analytics."
+    />
+    <meta
+      name="keywords"
+      content="GCB Bank, customer complaint tracking, dispute resolution, Ghana banking, financial dispute system, ATM refund, card dispute, Bank of Ghana compliance, CCTS"
+    />
+    <meta name="author" content="GCB Bank PLC" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="application-name" content="GCB Bank CCTS" />
+    <meta name="apple-mobile-web-app-title" content="GCB CCTS" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Open Graph / Facebook / LinkedIn / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GH" />
+    <meta property="og:site_name" content="GCB Bank CCTS" />
+    <meta
+      property="og:title"
+      content="GCB Bank CCTS – Customer Complaint Tracking System"
+    />
+    <meta
+      property="og:description"
+      content="Enterprise customer complaint tracking system for banking workflows, supporting customer submissions, staff investigation workstations, manager assignments, and SLA analytics."
+    />
+    <meta property="og:image" content="/gcb-logo.png" />
+    <meta property="og:image:alt" content="GCB Bank Customer Complaint Tracking System" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gcbbanklimited" />
+    <meta name="twitter:creator" content="@gcbbanklimited" />
+    <meta
+      name="twitter:title"
+      content="GCB Bank CCTS – Customer Complaint Tracking System"
+    />
+    <meta
+      name="twitter:description"
+      content="Enterprise customer complaint tracking system for banking workflows, supporting customer submissions, staff investigation workstations, manager assignments, and SLA analytics."
+    />
+    <meta name="twitter:image" content="/gcb-logo.png" />
+    <meta name="twitter:image:alt" content="GCB Bank CCTS Emblem" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/gcb-logo.png" />
+    <link rel="apple-touch-icon" href="/gcb-logo.png" />
+
+    <!-- Schema.org JSON-LD Structured Data for Rich Search Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://www.gcbbank.com.gh/#ccts-app",
+          "name": "GCB Bank CCTS – Customer Complaint Tracking System",
+          "url": "https://www.gcbbank.com.gh",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "Enterprise customer complaint tracking system for banking workflows, supporting customer submissions, staff investigation workstations, manager assignments, and SLA analytics.",
+          "publisher": {
+            "@type": "FinancialService",
+            "name": "GCB Bank PLC",
+            "legalName": "GCB Bank PLC",
+            "url": "https://www.gcbbank.com.gh",
+            "logo": "https://www.gcbbank.com.gh/gcb-logo.png",
+            "telephone": "+233-800-422-422",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Thorpe Road, High Street",
+              "addressLocality": "Accra",
+              "addressCountry": "GH"
+            }
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GHS"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.gcbbank.com.gh/#website",
+          "url": "https://www.gcbbank.com.gh",
+          "name": "GCB Bank CCTS",
+          "publisher": {
+            "@id": "https://www.gcbbank.com.gh/#ccts-app"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Global Fetch Polyfill & Resilient Interceptor -->
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          var _currentFetch = _origFetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(newFetch) {
+              _currentFetch = newFetch;
+            }
+          });
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() {
+                  return _currentFetch;
+                },
+                set: function(newFetch) {
+                  _currentFetch = newFetch;
+                }
+              });
+            } catch (_) {}
+          }
+        } catch (e) {
+          // Fallback if property is non-configurable
+        }
+      })();
+    </script>
+
+    <!-- Typography Fonts Preconnect & Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
